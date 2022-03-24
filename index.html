@@ -31,7 +31,7 @@
         <p>Fill in the fields below and describe your needs.</p>
         <p>In return we will contact you and suggest solutions for your business needs.</p>
         <form action="#" method="post" name="project-form">
-            <fieldset>
+            <fieldset class="input">
                 <div>
                     <label for="name">Name/Surname</label>
                     <input id="name" name="name" type="text" required minlength="3" placeholder="e.g. Jane Doe">
@@ -59,29 +59,31 @@
             </fieldset>
             <fieldset>
                 <h3>Specifics</h3>
-                <div>
-                    <label for="deadline">Deadline</label>
-                    <input id="deadline" name="deadline" type="date">
-                </div>
-                <div>
-                    <label for="budget">Budget</label>
-                    <input id="budget" name="budget" type="text" placeholder="$5000- $10000">
-                </div>
-                <div>
-                    <label for="project-url">Project Url</label>
-                    <input id="project-url" name="project-url" type="url" placeholder="www.website">
-                </div>
-                <div>
-                    <label for="target-audience">Target Audience</label>
-                    <input id="target-audience" name="target-audience" type="text" placeholder="Your specific target audience">
-                </div>
-                <div>
-                    <label for="description">Project Description</label>
-                    <textarea name="description" id="description" cols="30" rows="10" placeholder="Describe your vision or needs..."></textarea>
+                <div class="input">
+                    <div>
+                        <label for="deadline">Deadline</label>
+                        <input id="deadline" name="deadline" type="date">
+                    </div>
+                    <div>
+                        <label for="budget">Budget</label>
+                        <input id="budget" name="budget" type="text" placeholder="$5000- $10000">
+                    </div>
+                    <div>
+                        <label for="project-url">Project Url</label>
+                        <input id="project-url" name="project-url" type="url" placeholder="www.website">
+                    </div>
+                    <div>
+                        <label for="target-audience">Target Audience</label>
+                        <input id="target-audience" name="target-audience" type="text" placeholder="Your specific target audience">
+                    </div>
+                    <div>
+                        <label for="description">Project Description</label>
+                        <textarea name="description" id="description" cols="30" rows="10" placeholder="Describe your vision or needs..."></textarea>
+                    </div>
                 </div>
             </fieldset>
             <p>By completing and sending the data, you agree to the privacy policy</p>
-            <div>
+            <div class="checkbox">
                 <input id="accept" name="accept" type="checkbox">
                 <label for="accept">Accept</label>
             </div>

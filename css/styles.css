@@ -36,6 +36,8 @@ p{
 header{
     background-color: #000;
     fill: #fff;
+    position: sticky;
+    top: -15%;
 }
 
 header svg{
@@ -103,12 +105,28 @@ input[type=submit]{
     text-transform: uppercase;
     font-size: 1.875rem;
     transition: padding-left 1s ease;
+    text-align: left;
 }
 
 input[type=submit]:hover{
     cursor: pointer;
     color: var(--red);
     padding-left: 20px;
+}
+
+input[type=checkbox]{
+    width: 24px;
+    height: 24px;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox label{
+    padding-left: 1rem;
+    font-size: 1.5rem;
 }
 
 @media only screen and (min-width: 450px){
@@ -128,4 +146,20 @@ input[type=submit]:hover{
 
     /* to do : on the wider screen adjust and layout the form to two equal columns with a gutter space between them -- see screen shot
     */
+
+
+    .input{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4%;
+    }
+
+    .input div{
+        flex: 1 0 46%;
+    }
+
+    textarea{
+        width: 48%;
+    }
+    
 }
